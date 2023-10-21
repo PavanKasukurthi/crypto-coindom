@@ -1,3 +1,4 @@
+import styled from 'styled-components'
 import Footer from '../components/Footer'
 import Hero from '../components/Hero'
 import Join from '../components/Join'
@@ -7,14 +8,18 @@ import WhyUs from '../components/WhyUs'
 
 const Home = () => {
   return (
-    <>
-      <Navbar />
+    <Wrapper>
+      {/* <Navbar /> */}
       <Hero />
       <MarketUpdate />
       <WhyUs />
       <Join />
       <Footer />
-    </>
+    </Wrapper>
   )
 }
 export default Home
+
+const Wrapper = styled.main`
+  padding: 0 5rem;
+`
