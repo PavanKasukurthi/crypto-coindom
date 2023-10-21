@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@400;500;700&family=Space+Grotesk:wght@400;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Noto Sans Georgian', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
+  
+  scroll-behavior: smooth;
+
+  background: navy;
+}
+
+:root {
+  --blue-purple-gradient: linear-gradient(25deg, #2600fc, #ff00ea);
+  --bg-black: #0f051d;
+  --clr-green: rgb(14, 203, 129);
+  --clr-white: #f3f2f4;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
