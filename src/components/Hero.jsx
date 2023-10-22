@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
 const Hero = () => {
@@ -24,8 +25,8 @@ const Hero = () => {
   }
 
   useEffect(() => {
-    // fetchData()
-  }, [data])
+    fetchData()
+  }, [])
 
   return (
     <Wrapper>
@@ -61,9 +62,9 @@ const Hero = () => {
 export default Hero
 
 const Wrapper = styled.main`
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
 
   h1 {
     transition: all 0.3s;
@@ -77,6 +78,16 @@ const Wrapper = styled.main`
     &:hover {
       transition: 0.7s;
       background-image: linear-gradient(205deg, #2600fc, #ff00ea);
+    }
+  }
+
+  .coin-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    img {
+      width: 7rem;
+      height: auto;
     }
   }
 `
